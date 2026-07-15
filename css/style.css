@@ -1,0 +1,65 @@
+/* ============================================================
+   ESTILO BASE | P1-B
+   ATENCAO: isto NAO e identidade visual. E o minimo para o
+   texto ser legivel enquanto nao existe a P3-A (identidade
+   visual e layout), que nasce com o ESTILO_VISUAL.md.
+   Nao acrescentar estetica aqui antes dessa sessao.
+   ============================================================ */
+
+/* Reset minimo: o browser traz margens proprias que variam
+   entre browsers. Zerar garante que o ponto de partida e
+   igual em todo o lado. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* padding nao aumenta a largura do elemento */
+}
+
+body {
+  /* Tipos do sistema: usa a fonte nativa de cada dispositivo.
+     Zero downloads, zero dependencias externas. */
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  color: #1a1a1a;
+  background: #ffffff;
+}
+
+/* Largura maxima de leitura. Linhas muito longas cansam a
+   vista; ~65 caracteres e o limite confortavel.
+   O padding lateral evita texto colado a borda no telemovel. */
+.cabecalho,
+.conteudo,
+.rodape {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 2rem 1.25rem;
+}
+
+.cabecalho {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.cabecalho h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.subtitulo {
+  color: #666666;
+}
+
+.conteudo h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.conteudo p + p {
+  margin-top: 1rem; /* espaco entre paragrafos seguidos */
+}
+
+.rodape {
+  border-top: 1px solid #e5e5e5;
+  color: #666666;
+  font-size: 0.875rem;
+}

@@ -1,0 +1,38 @@
+# ============================================================
+# .gitignore | Portfolio Web
+#
+# ATENCAO, LER ANTES DE MEXER:
+# O repositorio deste site e PUBLICO (exigencia do GitHub Pages
+# em conta gratuita). Tudo o que NAO estiver listado aqui fica
+# visivel para qualquer pessoa na internet, para sempre, e o
+# historico do git guarda-o mesmo que se apague depois.
+# ============================================================
+
+# --- Ficheiros de sessao e de metodo (NUNCA publicar) --------
+# Motivo (decidido na P1-B): estes ficheiros expoem o objetivo
+# estrategico de candidatura enquanto ha vinculo laboral ativo,
+# o raciocinio interno sobre anonimizacao de clientes da JFA, e
+# numeros internos de empresa. A regra de confidencialidade do
+# CLAUDE.md e BLOQUEANTE e aplica-se aqui.
+# Ficam APENAS no disco local. Nao sao versionados.
+ROADMAP_SESSOES.txt
+CLAUDE.md
+log_sessao.md
+EXPLICACAO_PROJETO.md
+ESTILO_VISUAL.md
+TEMPLATE_PROMPT_FECHO.txt
+PROMPT_HANDOFF_*.txt
+
+# --- Lixo do sistema operativo -------------------------------
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# --- Editores ------------------------------------------------
+.vscode/
+.idea/
+*.swp
+
+# --- Nunca commitar segredos ---------------------------------
+.env
+*.key
