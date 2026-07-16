@@ -23,6 +23,11 @@ ESTILO_VISUAL.md
 TEMPLATE_PROMPT_FECHO.txt
 PROMPT_HANDOFF_*.txt
 
+# Pasta interna do repositorio PRIVADO de sessao (P1-B2). Contem
+# o historico completo desses ficheiros: publicar isto seria pior
+# que publicar os proprios ficheiros.
+.git-sessao/
+
 # --- Lixo do sistema operativo -------------------------------
 Thumbs.db
 desktop.ini
