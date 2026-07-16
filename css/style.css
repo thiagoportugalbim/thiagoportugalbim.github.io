@@ -1,9 +1,10 @@
 /* ============================================================
-   ESTILO BASE | P1-B
+   ESTILO BASE | P1-B + P1-C
    ATENCAO: isto NAO e identidade visual. E o minimo para o
-   texto ser legivel enquanto nao existe a P3-A (identidade
-   visual e layout), que nasce com o ESTILO_VISUAL.md.
-   Nao acrescentar estetica aqui antes dessa sessao.
+   texto ser legivel e a navegacao funcionar, enquanto nao
+   existe a P3-A (identidade visual e layout), que nasce com o
+   ESTILO_VISUAL.md. Nao acrescentar estetica aqui antes dessa
+   sessao, so estrutura.
    ============================================================ */
 
 /* Reset minimo: o browser traz margens proprias que variam
@@ -46,6 +47,76 @@ body {
 
 .subtitulo {
   color: #666666;
+}
+
+/* Linha de topo do cabecalho: nome/subtitulo de um lado,
+   seletor de idioma do outro. Quebra para baixo em ecras
+   estreitos em vez de espremer o conteudo. */
+.cabecalho-topo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.seletor-idioma {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn-idioma {
+  border: 1px solid #cccccc;
+  background: #ffffff;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+
+.btn-idioma.ativo {
+  background: #1a1a1a;
+  color: #ffffff;
+  border-color: #1a1a1a;
+}
+
+/* Navegacao principal: lista horizontal que quebra linha em
+   ecras estreitos. flex-wrap evita transbordo lateral no
+   telemovel sem precisar de menu hamburguer (isso, se vier a
+   fazer falta, e conversa da P3-C). */
+.nav-principal {
+  margin-top: 1.25rem;
+}
+
+.nav-principal ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+}
+
+.nav-principal a {
+  color: #1a1a1a;
+  text-decoration: none;
+  font-size: 0.9rem;
+  border-bottom: 1px solid transparent;
+}
+
+.nav-principal a:hover,
+.nav-principal a:focus {
+  border-bottom-color: #1a1a1a;
+}
+
+/* Espaco entre seccoes ancora, para o menu nao sobrepor o
+   titulo ao saltar para a seccao. */
+.conteudo section {
+  margin-bottom: 2rem;
+  scroll-margin-top: 1rem;
+}
+
+.conteudo section + section {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 1.5rem;
 }
 
 .conteudo h2 {
