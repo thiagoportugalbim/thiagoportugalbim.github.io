@@ -1,0 +1,103 @@
+{
+  "desenvolvimento_bim": {
+    "titulo_pt": "Desenvolvimento BIM",
+    "titulo_en": "BIM Development",
+    "intro_pt": "Criação de manuais de representação gráfica, guias de boas práticas e fluxos normalizados que sustentam a qualidade da modelação MEP.",
+    "intro_en": "Creation of graphic representation manuals, best practice guides and standardized workflows that sustain MEP modeling quality.",
+    "itens": [
+      {
+        "id": "manual-representacao-mep",
+        "titulo_pt": "Manual de Representação Gráfica MEP",
+        "titulo_en": "MEP Graphic Representation Manual",
+        "descricao_pt": "Conteúdo de exemplo (placeholder), a substituir. Documento de referência com convenções gráficas, cores por disciplina e simbologia para modelos MEP.",
+        "descricao_en": "Placeholder content, to be replaced. Reference document with graphic conventions, discipline color coding and symbology for MEP models."
+      },
+      {
+        "id": "guia-boas-praticas",
+        "titulo_pt": "Guia de Boas Práticas de Modelação",
+        "titulo_en": "Modeling Best Practices Guide",
+        "descricao_pt": "Conteúdo de exemplo (placeholder), a substituir. Recomendações de organização de modelo, nomenclatura e critérios de qualidade.",
+        "descricao_en": "Placeholder content, to be replaced. Recommendations on model organization, naming conventions and quality criteria."
+      },
+      {
+        "id": "fluxo-entrega-modelos",
+        "titulo_pt": "Fluxo Normalizado de Entrega de Modelos",
+        "titulo_en": "Standardized Model Delivery Workflow",
+        "descricao_pt": "Conteúdo de exemplo (placeholder), a substituir. Processo passo a passo para entrega e validação de modelos entre disciplinas.",
+        "descricao_en": "Placeholder content, to be replaced. Step-by-step process for model delivery and validation across disciplines."
+      }
+    ]
+  },
+  "implementacao_bim": {
+    "titulo_pt": "Implementação BIM",
+    "titulo_en": "BIM Implementation",
+    "intro_pt": "Criação de templates Revit, famílias, planos BEP/PEB alinhados à ISO 19650 e estruturação de departamentos.",
+    "intro_en": "Creation of Revit templates, families, ISO 19650-aligned BEP/PEB plans, and department structuring.",
+    "itens": [
+      {
+        "id": "templates-revit",
+        "titulo_pt": "Templates Revit por Disciplina",
+        "titulo_en": "Discipline-Specific Revit Templates",
+        "descricao_pt": "Conteúdo de exemplo (placeholder), a substituir. Templates configurados por disciplina para acelerar o arranque de projetos.",
+        "descricao_en": "Placeholder content, to be replaced. Discipline-specific templates configured to accelerate project kickoff."
+      },
+      {
+        "id": "biblioteca-familias",
+        "titulo_pt": "Biblioteca de Famílias Parametrizadas",
+        "titulo_en": "Parametric Families Library",
+        "descricao_pt": "Conteúdo de exemplo (placeholder), a substituir. Famílias Revit parametrizadas para uso recorrente entre projetos.",
+        "descricao_en": "Placeholder content, to be replaced. Parametric Revit families for recurring use across projects."
+      },
+      {
+        "id": "bep-peb-iso19650",
+        "titulo_pt": "BEP/PEB alinhado à ISO 19650",
+        "titulo_en": "ISO 19650-Aligned BEP/PEB",
+        "descricao_pt": "Conteúdo de exemplo (placeholder), a substituir. Plano de Execução BIM estruturado segundo os requisitos da ISO 19650.",
+        "descricao_en": "Placeholder content, to be replaced. BIM Execution Plan structured according to ISO 19650 requirements."
+      },
+      {
+        "id": "estruturacao-departamentos",
+        "titulo_pt": "Estruturação dos Departamentos de Hidráulica e Mecânica",
+        "titulo_en": "Structuring the Plumbing and Mechanical Departments",
+        "descricao_pt": "Conteúdo de exemplo (placeholder), a substituir. Organização de processos e fluxos de trabalho dos departamentos.",
+        "descricao_en": "Placeholder content, to be replaced. Organization of department processes and workflows."
+      }
+    ]
+  },
+  "treinamentos": {
+    "titulo_pt": "Treinamentos Ministrados",
+    "titulo_en": "Training Delivered",
+    "intro_pt": "Formações internas de metodologia BIM, ferramentas e produção, dirigidas a equipas técnicas.",
+    "intro_en": "Internal training on BIM methodology, tools and production, delivered to technical teams.",
+    "itens": [
+      {
+        "id": "bim-fiscalizacao",
+        "titulo_pt": "BIM para Fiscalização",
+        "titulo_en": "BIM for Site Supervision",
+        "descricao_pt": "Conteúdo de exemplo (placeholder), a substituir. Formação orientada à leitura e uso de modelos BIM em fiscalização de obra.",
+        "descricao_en": "Placeholder content, to be replaced. Training focused on reading and using BIM models for site supervision."
+      },
+      {
+        "id": "fundamentos-metodologia-bim",
+        "titulo_pt": "Fundamentos da Metodologia BIM",
+        "titulo_en": "BIM Methodology Fundamentals",
+        "descricao_pt": "Conteúdo de exemplo (placeholder), a substituir. Introdução aos conceitos, processos e benefícios da metodologia BIM.",
+        "descricao_en": "Placeholder content, to be replaced. Introduction to BIM methodology concepts, processes and benefits."
+      },
+      {
+        "id": "revit-producao",
+        "titulo_pt": "Revit Aplicado à Produção",
+        "titulo_en": "Revit Applied to Production",
+        "descricao_pt": "Conteúdo de exemplo (placeholder), a substituir. Formação prática de Revit orientada ao fluxo de produção de projetos.",
+        "descricao_en": "Placeholder content, to be replaced. Hands-on Revit training oriented to project production workflow."
+      },
+      {
+        "id": "formacao-modeladores",
+        "titulo_pt": "Formação de Modeladores",
+        "titulo_en": "Modeler Training",
+        "descricao_pt": "Conteúdo de exemplo (placeholder), a substituir. Capacitação de novos modeladores nas ferramentas e padrões da equipa.",
+        "descricao_en": "Placeholder content, to be replaced. Onboarding of new modelers to the team's tools and standards."
+      }
+    ]
+  }
+}

@@ -169,8 +169,63 @@ async function carregarEExibirCoordenados() {
   }
 }
 
+/* ============================================================
+   RENDERIZADOR DE COORDENACAO BIM | P2-D
+   Carrega dados/coordenacao-bim.json: tres blocos (desenvolvimento_bim,
+   implementacao_bim, treinamentos), cada um com titulo, intro e uma
+   lista de itens (titulo + descricao).
+   ============================================================ */
+
+function renderizarBlocoCoordenacaoBim(bloco, prefixoId) {
+  const idiomaAtual = localStorage.getItem(CHAVE_IDIOMA) || "pt";
+
+  const tituloElement = document.getElementById(prefixoId + "-titulo");
+  if (tituloElement) {
+    tituloElement.dataset.pt = bloco.titulo_pt;
+    tituloElement.dataset.en = bloco.titulo_en;
+    tituloElement.textContent = bloco.titulo_pt;
+  }
+
+  const introElement = document.getElementById(prefixoId + "-intro");
+  if (introElement) {
+    introElement.dataset.pt = bloco.intro_pt;
+    introElement.dataset.en = bloco.intro_en;
+    introElement.textContent = bloco.intro_pt;
+  }
+
+  const gradeElement = document.getElementById("grade-" + prefixoId);
+  if (gradeElement) {
+    bloco.itens.forEach((item) => {
+      const card = document.createElement("div");
+      card.className = "item-bim-card";
+      card.innerHTML = `
+        <h4 data-pt="${item.titulo_pt}" data-en="${item.titulo_en}">${item.titulo_pt}</h4>
+        <p data-pt="${item.descricao_pt}" data-en="${item.descricao_en}">${item.descricao_pt}</p>
+      `;
+      gradeElement.appendChild(card);
+    });
+  }
+
+  aplicarIdioma(idiomaAtual);
+}
+
+async function carregarEExibirCoordenacaoBim() {
+  try {
+    const resposta = await fetch("dados/coordenacao-bim.json");
+    const dados = await resposta.json();
+
+    renderizarBlocoCoordenacaoBim(dados.desenvolvimento_bim, "desenvolvimento-bim");
+    renderizarBlocoCoordenacaoBim(dados.implementacao_bim, "implementacao-bim");
+    renderizarBlocoCoordenacaoBim(dados.treinamentos, "treinamentos");
+
+  } catch (erro) {
+    console.error("Erro ao carregar coordenacao BIM:", erro);
+  }
+}
+
 // Ao carregar a pagina, renderizar projetos
 document.addEventListener("DOMContentLoaded", carregarEExibirProjetos);
 document.addEventListener("DOMContentLoaded", carregarEExibirCoordenados);
+document.addEventListener("DOMContentLoaded", carregarEExibirCoordenacaoBim);
 
-console.log("Portfolio Web: JS carregado. Navegacao, seletor de idioma P1-C, renderizador de projetos P2-B e projetos coordenados P2-C.");
+console.log("Portfolio Web: JS carregado. Navegacao, seletor de idioma P1-C, renderizador de projetos P2-B, projetos coordenados P2-C e coordenacao BIM P2-D.");

@@ -204,3 +204,32 @@ body {
   font-size: 0.8rem;
   color: #666666;
 }
+
+/* Itens de Coordenacao BIM (desenvolvimento, implementacao,
+   treinamentos) | P2-D
+   Minima: layout responsivo sem estetica. */
+.grade-itens-bim {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.item-bim-card {
+  border: 1px solid #e5e5e5;
+  border-radius: 0.25rem;
+  padding: 1rem;
+}
+
+.item-bim-card h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.item-bim-card p {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #444444;
+}
