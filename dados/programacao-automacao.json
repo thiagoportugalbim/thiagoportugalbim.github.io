@@ -1,0 +1,52 @@
+{
+  "geral": {
+    "titulo_pt": "Programação e Automação",
+    "titulo_en": "Programming and Automation",
+    "intro_pt": "Conteúdo de exemplo (placeholder), a substituir. Ferramentas e lógicas de programação aplicadas à automação de processos BIM.",
+    "intro_en": "Placeholder content, to be replaced. Programming tools and logic applied to BIM process automation.",
+    "itens": [
+      {
+        "id": "python",
+        "titulo_pt": "Python",
+        "titulo_en": "Python",
+        "descricao_pt": "Conteúdo de exemplo (placeholder), a substituir. Scripts de automação e integração de dados fora do ambiente Revit.",
+        "descricao_en": "Placeholder content, to be replaced. Automation scripts and data integration outside the Revit environment."
+      },
+      {
+        "id": "dynamo",
+        "titulo_pt": "Dynamo",
+        "titulo_en": "Dynamo",
+        "descricao_pt": "Conteúdo de exemplo (placeholder), a substituir. Rotinas visuais de automação dentro do Revit.",
+        "descricao_en": "Placeholder content, to be replaced. Visual automation routines inside Revit."
+      },
+      {
+        "id": "csharp",
+        "titulo_pt": "C#",
+        "titulo_en": "C#",
+        "descricao_pt": "Conteúdo de exemplo (placeholder), a substituir. Desenvolvimento de plugins e add-ins para a API do Revit.",
+        "descricao_en": "Placeholder content, to be replaced. Plugin and add-in development for the Revit API."
+      },
+      {
+        "id": "pyrevit",
+        "titulo_pt": "pyRevit",
+        "titulo_en": "pyRevit",
+        "descricao_pt": "Conteúdo de exemplo (placeholder), a substituir. Ferramentas próprias distribuídas em botão de fita (ribbon) para a equipa.",
+        "descricao_en": "Placeholder content, to be replaced. Custom tools distributed as ribbon buttons for the team."
+      },
+      {
+        "id": "vibe-coding",
+        "titulo_pt": "Vibe Coding",
+        "titulo_en": "Vibe Coding",
+        "descricao_pt": "Conteúdo de exemplo (placeholder), a substituir. Desenvolvimento assistido por IA para prototipagem e ferramentas internas.",
+        "descricao_en": "Placeholder content, to be replaced. AI-assisted development for prototyping and internal tools."
+      },
+      {
+        "id": "logicas",
+        "titulo_pt": "Lógicas de Automação",
+        "titulo_en": "Automation Logic",
+        "descricao_pt": "Conteúdo de exemplo (placeholder), a substituir. Padrões de raciocínio aplicados à resolução de problemas repetitivos de produção BIM.",
+        "descricao_en": "Placeholder content, to be replaced. Reasoning patterns applied to solving repetitive BIM production problems."
+      }
+    ]
+  }
+}

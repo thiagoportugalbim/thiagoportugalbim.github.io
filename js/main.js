@@ -250,11 +250,28 @@ async function carregarEExibirPadroesNormas() {
   }
 }
 
+/* ============================================================
+   RENDERIZADOR DE PROGRAMACAO E AUTOMACAO | P2-F
+   Mesmo padrao de bloco unico do software.json/padroes-normas.json,
+   reaproveitando renderizarBlocoCoordenacaoBim sem alteracoes.
+   ============================================================ */
+
+async function carregarEExibirProgramacaoAutomacao() {
+  try {
+    const resposta = await fetch("dados/programacao-automacao.json");
+    const dados = await resposta.json();
+    renderizarBlocoCoordenacaoBim(dados.geral, "programacao");
+  } catch (erro) {
+    console.error("Erro ao carregar programacao e automacao:", erro);
+  }
+}
+
 // Ao carregar a pagina, renderizar projetos
 document.addEventListener("DOMContentLoaded", carregarEExibirProjetos);
 document.addEventListener("DOMContentLoaded", carregarEExibirCoordenados);
 document.addEventListener("DOMContentLoaded", carregarEExibirCoordenacaoBim);
 document.addEventListener("DOMContentLoaded", carregarEExibirSoftware);
 document.addEventListener("DOMContentLoaded", carregarEExibirPadroesNormas);
+document.addEventListener("DOMContentLoaded", carregarEExibirProgramacaoAutomacao);
 
 console.log("Portfolio Web: JS carregado. Navegacao, seletor de idioma P1-C, renderizador de projetos P2-B, projetos coordenados P2-C, coordenacao BIM P2-D e software/padroes-normas P2-E.");
