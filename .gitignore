@@ -21,7 +21,10 @@ log_sessao.md
 EXPLICACAO_PROJETO.md
 ESTILO_VISUAL.md
 TEMPLATE_PROMPT_FECHO.txt
-PROMPT_HANDOFF_*.txt
+
+# Pasta com os prompts de handoff de cada fecho de sessao
+# (centralizada aqui a partir da P2-A; antes ficavam soltos na raiz)
+prompts/
 
 # Pasta interna do repositorio PRIVADO de sessao (P1-B2). Contem
 # o historico completo desses ficheiros: publicar isto seria pior
