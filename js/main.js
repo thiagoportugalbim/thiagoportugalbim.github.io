@@ -223,9 +223,38 @@ async function carregarEExibirCoordenacaoBim() {
   }
 }
 
+/* ============================================================
+   RENDERIZADOR DE SOFTWARE E PADROES/NORMAS | P2-E
+   Ambos os ficheiros (dados/software.json, dados/padroes-normas.json)
+   guardam um unico bloco sob a chave "geral" (titulo, intro, itens),
+   reaproveitando renderizarBlocoCoordenacaoBim sem alteracoes.
+   ============================================================ */
+
+async function carregarEExibirSoftware() {
+  try {
+    const resposta = await fetch("dados/software.json");
+    const dados = await resposta.json();
+    renderizarBlocoCoordenacaoBim(dados.geral, "software");
+  } catch (erro) {
+    console.error("Erro ao carregar software:", erro);
+  }
+}
+
+async function carregarEExibirPadroesNormas() {
+  try {
+    const resposta = await fetch("dados/padroes-normas.json");
+    const dados = await resposta.json();
+    renderizarBlocoCoordenacaoBim(dados.geral, "padroes-normas");
+  } catch (erro) {
+    console.error("Erro ao carregar padroes e normas:", erro);
+  }
+}
+
 // Ao carregar a pagina, renderizar projetos
 document.addEventListener("DOMContentLoaded", carregarEExibirProjetos);
 document.addEventListener("DOMContentLoaded", carregarEExibirCoordenados);
 document.addEventListener("DOMContentLoaded", carregarEExibirCoordenacaoBim);
+document.addEventListener("DOMContentLoaded", carregarEExibirSoftware);
+document.addEventListener("DOMContentLoaded", carregarEExibirPadroesNormas);
 
-console.log("Portfolio Web: JS carregado. Navegacao, seletor de idioma P1-C, renderizador de projetos P2-B, projetos coordenados P2-C e coordenacao BIM P2-D.");
+console.log("Portfolio Web: JS carregado. Navegacao, seletor de idioma P1-C, renderizador de projetos P2-B, projetos coordenados P2-C, coordenacao BIM P2-D e software/padroes-normas P2-E.");

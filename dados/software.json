@@ -1,0 +1,73 @@
+{
+  "geral": {
+    "titulo_pt": "Software",
+    "titulo_en": "Software",
+    "intro_pt": "Conteúdo de exemplo (placeholder), a substituir. Ferramentas de modelação, coordenação e gestão utilizadas no dia a dia da prática BIM.",
+    "intro_en": "Placeholder content, to be replaced. Modeling, coordination and management tools used in day-to-day BIM practice.",
+    "itens": [
+      {
+        "id": "revit-mep",
+        "titulo_pt": "Revit MEP",
+        "titulo_en": "Revit MEP",
+        "descricao_pt": "Conteúdo de exemplo (placeholder), a substituir. Modelação de instalações hidráulicas, elétricas e mecânicas.",
+        "descricao_en": "Placeholder content, to be replaced. Modeling of plumbing, electrical and mechanical systems."
+      },
+      {
+        "id": "navisworks-manage",
+        "titulo_pt": "Navisworks Manage",
+        "titulo_en": "Navisworks Manage",
+        "descricao_pt": "Conteúdo de exemplo (placeholder), a substituir. Coordenação multidisciplinar e deteção de clashes.",
+        "descricao_en": "Placeholder content, to be replaced. Multidisciplinary coordination and clash detection."
+      },
+      {
+        "id": "acc-forma",
+        "titulo_pt": "ACC / Autodesk Forma",
+        "titulo_en": "ACC / Autodesk Forma",
+        "descricao_pt": "Conteúdo de exemplo (placeholder), a substituir. Gestão de projeto e colaboração em nuvem.",
+        "descricao_en": "Placeholder content, to be replaced. Cloud-based project management and collaboration."
+      },
+      {
+        "id": "bim-360",
+        "titulo_pt": "BIM 360",
+        "titulo_en": "BIM 360",
+        "descricao_pt": "Conteúdo de exemplo (placeholder), a substituir. Gestão documental e de modelos em ambiente comum de dados.",
+        "descricao_en": "Placeholder content, to be replaced. Document and model management in a common data environment."
+      },
+      {
+        "id": "bimcollab-zoom",
+        "titulo_pt": "BIMcollab Zoom",
+        "titulo_en": "BIMcollab Zoom",
+        "descricao_pt": "Conteúdo de exemplo (placeholder), a substituir. Visualização e gestão de issues de coordenação BIM.",
+        "descricao_en": "Placeholder content, to be replaced. Visualization and BIM coordination issue management."
+      },
+      {
+        "id": "bluebeam",
+        "titulo_pt": "Bluebeam",
+        "titulo_en": "Bluebeam",
+        "descricao_pt": "Conteúdo de exemplo (placeholder), a substituir. Revisão de plantas e documentação em PDF.",
+        "descricao_en": "Placeholder content, to be replaced. Drawing review and PDF documentation."
+      },
+      {
+        "id": "autocad",
+        "titulo_pt": "AutoCAD",
+        "titulo_en": "AutoCAD",
+        "descricao_pt": "Conteúdo de exemplo (placeholder), a substituir. Desenho técnico 2D de apoio à documentação de projeto.",
+        "descricao_en": "Placeholder content, to be replaced. 2D technical drafting supporting project documentation."
+      },
+      {
+        "id": "ms-project",
+        "titulo_pt": "MS Project",
+        "titulo_en": "MS Project",
+        "descricao_pt": "Conteúdo de exemplo (placeholder), a substituir. Planeamento e acompanhamento de cronogramas de projeto.",
+        "descricao_en": "Placeholder content, to be replaced. Project schedule planning and tracking."
+      },
+      {
+        "id": "dynamo",
+        "titulo_pt": "Dynamo",
+        "titulo_en": "Dynamo",
+        "descricao_pt": "Conteúdo de exemplo (placeholder), a substituir. Automação visual de rotinas dentro do Revit.",
+        "descricao_en": "Placeholder content, to be replaced. Visual automation of routines inside Revit."
+      }
+    ]
+  }
+}

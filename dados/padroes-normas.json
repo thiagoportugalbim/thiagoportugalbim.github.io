@@ -1,0 +1,52 @@
+{
+  "geral": {
+    "titulo_pt": "Padrões e Normas",
+    "titulo_en": "Standards and Guidelines",
+    "intro_pt": "Conteúdo de exemplo (placeholder), a substituir. Normas e padrões que sustentam a qualidade e a interoperabilidade dos processos BIM.",
+    "intro_en": "Placeholder content, to be replaced. Standards and guidelines that sustain the quality and interoperability of BIM processes.",
+    "itens": [
+      {
+        "id": "iso-19650",
+        "titulo_pt": "ISO 19650",
+        "titulo_en": "ISO 19650",
+        "descricao_pt": "Conteúdo de exemplo (placeholder), a substituir. Gestão da informação ao longo do ciclo de vida do projeto com metodologia BIM.",
+        "descricao_en": "Placeholder content, to be replaced. Information management throughout the project lifecycle using BIM methodology."
+      },
+      {
+        "id": "lod-loi",
+        "titulo_pt": "LOD / LOI",
+        "titulo_en": "LOD / LOI",
+        "descricao_pt": "Conteúdo de exemplo (placeholder), a substituir. Definição do nível de desenvolvimento geométrico e de informação dos modelos.",
+        "descricao_en": "Placeholder content, to be replaced. Definition of the level of geometric and information development of models."
+      },
+      {
+        "id": "nbr",
+        "titulo_pt": "NBR",
+        "titulo_en": "NBR (Brazilian Standards)",
+        "descricao_pt": "Conteúdo de exemplo (placeholder), a substituir. Normas técnicas brasileiras aplicadas ao projeto de instalações.",
+        "descricao_en": "Placeholder content, to be replaced. Brazilian technical standards applied to building systems design."
+      },
+      {
+        "id": "comgas",
+        "titulo_pt": "COMGÁS",
+        "titulo_en": "COMGÁS",
+        "descricao_pt": "Conteúdo de exemplo (placeholder), a substituir. Normas da concessionária de gás natural aplicadas ao projeto de instalações prediais de gás.",
+        "descricao_en": "Placeholder content, to be replaced. Natural gas utility standards applied to building gas systems design."
+      },
+      {
+        "id": "cei",
+        "titulo_pt": "Normas CEI",
+        "titulo_en": "CEI Standards",
+        "descricao_pt": "Conteúdo de exemplo (placeholder), a substituir. Normas internacionais aplicadas ao projeto elétrico.",
+        "descricao_en": "Placeholder content, to be replaced. International standards applied to electrical design."
+      },
+      {
+        "id": "documentos-padroes-criados",
+        "titulo_pt": "Documentos e Padrões Criados",
+        "titulo_en": "Documents and Standards Created",
+        "descricao_pt": "Conteúdo de exemplo (placeholder), a substituir. Documentos e padrões próprios desenvolvidos para normalizar processos de equipa.",
+        "descricao_en": "Placeholder content, to be replaced. Own documents and standards developed to standardize team processes."
+      }
+    ]
+  }
+}
