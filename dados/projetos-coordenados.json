@@ -7,14 +7,25 @@
       "localizacao": "Portimão, Portugal",
       "tipologia_pt": "Hotelaria de Luxo",
       "tipologia_en": "Luxury Hospitality",
-      "capacidade": "~275 quartos + 150 apartamentos de marca",
+      "capacidade_pt": "",
       "capacidade_en": "~275 rooms + 150 branded apartments",
       "papel_pt": "Coordenação BIM MEP",
       "papel_en": "BIM MEP Coordination",
-      "disciplinas_pt": ["Hidráulica", "Elétrica", "AVAC", "Incêndio"],
-      "disciplinas_en": ["Plumbing", "Electrical", "HVAC", "Fire Protection"],
-      "descricao_pt": "Coordenação multidisciplinar MEP num empreendimento hoteleiro de grande escala, com gestão de interferências entre disciplinas e acompanhamento do modelo até à fase executiva.",
-      "descricao_en": "Multidisciplinary MEP coordination on a large-scale hospitality development, managing clashes across disciplines and tracking the model through to the executive phase."
+      "disciplinas_pt": [
+        "Hidráulica",
+        "Elétrica",
+        "AVAC",
+        "Incêndio"
+      ],
+      "disciplinas_en": [
+        "Plumbing",
+        "Electrical",
+        "HVAC",
+        "Fire Protection"
+      ],
+      "descricao_pt": "TESTE TESTE TESTE Coordenação multidisciplinar MEP num empreendimento hoteleiro de grande escala, com gestão de interferências entre disciplinas e acompanhamento do modelo até à fase executiva.",
+      "descricao_en": "Multidisciplinary MEP coordination on a large-scale hospitality development, managing clashes across disciplines and tracking the model through to the executive phase.",
+      "imagem": ""
     },
     {
       "id": "viva-mundo",
@@ -27,8 +38,16 @@
       "capacidade_en": "~800,000 m², €450M investment",
       "papel_pt": "Coordenação BIM de larga escala",
       "papel_en": "Large-Scale BIM Coordination",
-      "disciplinas_pt": ["Arquitetura", "Estruturas", "MEP"],
-      "disciplinas_en": ["Architecture", "Structures", "MEP"],
+      "disciplinas_pt": [
+        "Arquitetura",
+        "Estruturas",
+        "MEP"
+      ],
+      "disciplinas_en": [
+        "Architecture",
+        "Structures",
+        "MEP"
+      ],
       "descricao_pt": "Coordenação BIM num dos maiores projetos de entretenimento da Europa, com gestão de modelo multidisciplinar à escala de um parque temático completo.",
       "descricao_en": "BIM coordination on one of Europe's largest entertainment developments, managing a multidisciplinary model at the scale of a full theme park."
     },
@@ -43,8 +62,16 @@
       "capacidade_en": "~13,500 m², 7 floors",
       "papel_pt": "Coordenação MEP",
       "papel_en": "MEP Coordination",
-      "disciplinas_pt": ["Hidráulica", "Elétrica", "AVAC"],
-      "disciplinas_en": ["Plumbing", "Electrical", "HVAC"],
+      "disciplinas_pt": [
+        "Hidráulica",
+        "Elétrica",
+        "AVAC"
+      ],
+      "disciplinas_en": [
+        "Plumbing",
+        "Electrical",
+        "HVAC"
+      ],
       "descricao_pt": "Coordenação MEP num ambiente hospitalar, com exigências elevadas de precisão de modelo e compatibilização entre disciplinas técnicas.",
       "descricao_en": "MEP coordination in a hospital environment, with high demands for model accuracy and cross-discipline compatibility."
     },
@@ -59,8 +86,12 @@
       "capacidade_en": "",
       "papel_pt": "Modelação e coordenação elétrica",
       "papel_en": "Electrical Modeling and Coordination",
-      "disciplinas_pt": ["Elétrica"],
-      "disciplinas_en": ["Electrical"],
+      "disciplinas_pt": [
+        "Elétrica"
+      ],
+      "disciplinas_en": [
+        "Electrical"
+      ],
       "descricao_pt": "Modelação e coordenação da disciplina elétrica segundo normas CEI, num projeto de infraestrutura crítica de data center.",
       "descricao_en": "Electrical discipline modeling and coordination under CEI standards, on a critical data center infrastructure project."
     },
@@ -75,8 +106,12 @@
       "capacidade_en": "",
       "papel_pt": "Modelação a partir de nuvem de pontos",
       "papel_en": "Point Cloud Modeling",
-      "disciplinas_pt": ["Modelação 3D"],
-      "disciplinas_en": ["3D Modeling"],
+      "disciplinas_pt": [
+        "Modelação 3D"
+      ],
+      "disciplinas_en": [
+        "3D Modeling"
+      ],
       "descricao_pt": "Construção de modelo digital integral de infraestrutura de tratamento de água a partir de nuvem de pontos (scan-to-BIM).",
       "descricao_en": "Full digital model of water treatment infrastructure built from point cloud data (scan-to-BIM)."
     }
@@ -88,12 +123,68 @@
     "intro_pt": "Além da coordenação de projetos de clientes, fundei e coordenei a Futuro Engenharia, empresa própria de projetos de engenharia:",
     "intro_en": "Beyond client project coordination, I founded and led Futuro Engenharia, my own engineering design company:",
     "estatisticas": [
-      { "valor": "2021", "rotulo_pt": "Ano de fundação", "rotulo_en": "Founded" },
-      { "valor": "14", "rotulo_pt": "Clientes", "rotulo_en": "Clients" },
-      { "valor": "107", "rotulo_pt": "Projetos completos", "rotulo_en": "Completed projects" },
-      { "valor": "71", "rotulo_pt": "Executados em 6 estados", "rotulo_en": "Executed across 6 states" },
-      { "valor": "242.408 m²", "rotulo_pt": "Área projetada", "rotulo_en": "Designed area" },
-      { "valor": "4.680", "rotulo_pt": "Unidades MCMV", "rotulo_en": "MCMV housing units" }
+      {
+        "valor": "2021",
+        "rotulo_pt": "Ano de fundação",
+        "rotulo_en": "Founded"
+      },
+      {
+        "valor": "14",
+        "rotulo_pt": "Clientes",
+        "rotulo_en": "Clients"
+      },
+      {
+        "valor": "107",
+        "rotulo_pt": "Projetos completos",
+        "rotulo_en": "Completed projects"
+      },
+      {
+        "valor": "71",
+        "rotulo_pt": "Executados em 6 estados",
+        "rotulo_en": "Executed across 6 states"
+      },
+      {
+        "valor": "242.408 m²",
+        "rotulo_pt": "Área projetada",
+        "rotulo_en": "Designed area"
+      },
+      {
+        "valor": "4.680",
+        "rotulo_pt": "Unidades MCMV",
+        "rotulo_en": "MCMV housing units"
+      }
     ]
-  }
+  },
+  "__estatisticas_virtual__": [
+    {
+      "valor": "2021",
+      "rotulo_pt": "Ano de fundação",
+      "rotulo_en": "Founded"
+    },
+    {
+      "valor": "14",
+      "rotulo_pt": "Clientes",
+      "rotulo_en": "Clients"
+    },
+    {
+      "valor": "107",
+      "rotulo_pt": "Projetos completos",
+      "rotulo_en": "Completed projects"
+    },
+    {
+      "valor": "71",
+      "rotulo_pt": "Executados em 6 estados",
+      "rotulo_en": "Executed across 6 states"
+    },
+    {
+      "valor": "242.408 m²",
+      "rotulo_pt": "Área projetada",
+      "rotulo_en": "Designed area"
+    },
+    {
+      "valor": "4.680",
+      "rotulo_pt": "Unidades MCMV",
+      "rotulo_en": "MCMV housing units"
+    }
+  ]
 }

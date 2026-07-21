@@ -47,7 +47,7 @@ aplicarIdioma(idiomaGuardado);
 
 async function carregarEExibirProjetos() {
   try {
-    const resposta = await fetch("dados/projetos.json");
+    const resposta = await fetch("dados/projetos-produzidos.json");
     const dados = await resposta.json();
 
     const gradeElement = document.getElementById("grade-projetos");
