@@ -266,6 +266,61 @@ async function carregarEExibirProgramacaoAutomacao() {
   }
 }
 
+/* ============================================================
+   RENDERIZADOR DE COISAS CONSTRUIDAS COM CODIGO | P2-G
+   Mesmo bloco unico "geral" de software.json/padroes-normas.json,
+   mas cada item tem campos extra (estado, ano, tecnologias, link)
+   alem de titulo/descricao. Funcao propria, nao reaproveita
+   renderizarBlocoCoordenacaoBim porque o cartao precisa de mais
+   campos do que titulo+descricao.
+   ============================================================ */
+
+async function carregarEExibirConstruidoComCodigo() {
+  try {
+    const resposta = await fetch("dados/coisas-construidas.json");
+    const dados = await resposta.json();
+    const bloco = dados.geral;
+    const idiomaAtual = localStorage.getItem(CHAVE_IDIOMA) || "pt";
+
+    const introElement = document.getElementById("projetos-codigo-intro");
+    if (introElement) {
+      introElement.dataset.pt = bloco.intro_pt;
+      introElement.dataset.en = bloco.intro_en;
+      introElement.textContent = bloco.intro_pt;
+    }
+
+    const gradeElement = document.getElementById("grade-projetos-codigo");
+    if (gradeElement) {
+      bloco.itens.forEach((item) => {
+        const card = document.createElement("div");
+        card.className = "item-bim-card item-construido-card";
+
+        const tagsTecnologias = item.tecnologias
+          ? item.tecnologias.split(",").map((t) => `<span class="tag-tecnologia">${t.trim()}</span>`).join("")
+          : "";
+
+        card.innerHTML = `
+          <h4 data-pt="${item.titulo_pt}" data-en="${item.titulo_en}">${item.titulo_pt}</h4>
+          <div class="item-construido-meta">
+            ${item.estado_pt ? `<span class="badge-estado" data-pt="${item.estado_pt}" data-en="${item.estado_en}">${item.estado_pt}</span>` : ""}
+            ${item.ano ? `<span class="item-construido-ano">${item.ano}</span>` : ""}
+          </div>
+          <p data-pt="${item.descricao_pt}" data-en="${item.descricao_en}">${item.descricao_pt}</p>
+          ${tagsTecnologias ? `<div class="lista-tecnologias">${tagsTecnologias}</div>` : ""}
+          ${item.link ? `<a href="${item.link}" class="link-projeto" target="_blank" rel="noopener">${item.link}</a>` : ""}
+        `;
+
+        gradeElement.appendChild(card);
+      });
+    }
+
+    aplicarIdioma(idiomaAtual);
+
+  } catch (erro) {
+    console.error("Erro ao carregar coisas construidas com codigo:", erro);
+  }
+}
+
 // Ao carregar a pagina, renderizar projetos
 document.addEventListener("DOMContentLoaded", carregarEExibirProjetos);
 document.addEventListener("DOMContentLoaded", carregarEExibirCoordenados);
@@ -273,5 +328,6 @@ document.addEventListener("DOMContentLoaded", carregarEExibirCoordenacaoBim);
 document.addEventListener("DOMContentLoaded", carregarEExibirSoftware);
 document.addEventListener("DOMContentLoaded", carregarEExibirPadroesNormas);
 document.addEventListener("DOMContentLoaded", carregarEExibirProgramacaoAutomacao);
+document.addEventListener("DOMContentLoaded", carregarEExibirConstruidoComCodigo);
 
-console.log("Portfolio Web: JS carregado. Navegacao, seletor de idioma P1-C, renderizador de projetos P2-B, projetos coordenados P2-C, coordenacao BIM P2-D e software/padroes-normas P2-E.");
+console.log("Portfolio Web: JS carregado. Navegacao, seletor de idioma P1-C, renderizador de projetos P2-B, projetos coordenados P2-C, coordenacao BIM P2-D, software/padroes-normas P2-E e coisas construidas com codigo P2-G.");

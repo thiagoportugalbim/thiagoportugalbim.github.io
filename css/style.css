@@ -233,3 +233,49 @@ body {
   line-height: 1.5;
   color: #444444;
 }
+
+/* Coisas Construidas com Codigo | P2-G
+   Campos extra por item: estado, ano, tecnologias, link.
+   Minima: layout so, sem estetica (a P3-A trata disso). */
+.item-construido-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.badge-estado {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+  border-radius: 0.2rem;
+  background-color: #eef2f5;
+  color: #333333;
+}
+
+.item-construido-ano {
+  font-size: 0.75rem;
+  color: #777777;
+}
+
+.lista-tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.6rem;
+}
+
+.tag-tecnologia {
+  font-size: 0.7rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 0.2rem;
+  border: 1px solid #dddddd;
+  color: #555555;
+}
+
+.link-projeto {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+}

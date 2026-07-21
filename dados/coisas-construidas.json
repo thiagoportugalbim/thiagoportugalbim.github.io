@@ -1,0 +1,82 @@
+{
+  "geral": {
+    "titulo_pt": "Construído com Código",
+    "titulo_en": "Built with Code",
+    "intro_pt": "Ferramentas próprias, construídas para resolver problemas reais de coordenação BIM. Cada uma nasceu de um processo manual que deixou de fazer sentido repetir à mão.",
+    "intro_en": "Custom tools, built to solve real BIM coordination problems. Each one replaced a manual process that no longer made sense to repeat by hand.",
+    "itens": [
+      {
+        "id": "qto-ifc",
+        "titulo_pt": "QTO-IFC",
+        "titulo_en": "QTO-IFC",
+        "estado_pt": "Em produção na JFA",
+        "estado_en": "In production at JFA",
+        "ano": "2026",
+        "tecnologias": "Python, FastAPI, IfcOpenShell, SQLite, openpyxl",
+        "link": "",
+        "descricao_pt": "Extrator de quantitativos a partir de modelos IFC. O processo anterior era manual: o modelo era interpretado à mão e o Excel de quantidades montado item a item. A ferramenta lê as quantidades diretamente do IFC (área, volume, contagem, dimensões) e gera um Excel com resumo por categoria e detalhamento por tipo, sem cálculo de geometria a partir do zero. Começou como um script de linha de comando e evoluiu para uma plataforma web local com estado: projetos guardados, vários modelos IFC por projeto, histórico de extrações em base de dados (SQLite), e um visor 3D leve (glTF) para confirmar visualmente os elementos quantificados. Corre hoje como serviço automático na JFA, com arranque e reinício geridos pelo sistema, sem depender de alguém correr um script manualmente.",
+        "descricao_en": "Quantity takeoff extractor from IFC models. The previous process was manual: the model was read by eye and the quantities spreadsheet built item by item. The tool reads quantities directly from the IFC (area, volume, count, dimensions) and generates an Excel with a per-category summary and per-type detail, without recomputing geometry from scratch. It started as a command-line script and evolved into a stateful local web platform: saved projects, multiple IFC models per project, extraction history in a database (SQLite), and a lightweight 3D viewer (glTF) to visually confirm the quantified elements. It now runs as an automatic service at JFA, with startup and restart managed by the system, without depending on someone running a script by hand."
+      },
+      {
+        "id": "plataforma-clashes",
+        "titulo_pt": "Plataforma web de gestão de clashes",
+        "titulo_en": "Clash management web platform",
+        "estado_pt": "Funcional, uso interno",
+        "estado_en": "Functional, internal use",
+        "ano": "2026",
+        "tecnologias": "Python, FastAPI, SQLite, Next.js, Tailwind, Recharts, BCF",
+        "link": "",
+        "descricao_pt": "O ciclo de deteção de clashes tradicional é unidirecional: o Navisworks deteta, mas não resolve nem comunica o estado de volta, e a gestão acontece à parte em Excel, sem visibilidade em tempo real para quem gere o projeto. A plataforma fecha esse ciclo usando o BCF (BIM Collaboration Format, um protocolo aberto e nativo do Revit) como elo de ligação entre ferramentas. Lê relatórios de clashes exportados do Navisworks, mantém um histórico por projeto com evolução ao longo do tempo, apresenta uma matriz de cruzamento entre disciplinas e permite gerir cada clash individualmente (estado, responsável, prioridade, comentários), incluindo atribuição em massa. As funcionalidades principais já estão operacionais; os próximos passos são exportação em PDF e edição mais fina dos dados de projeto.",
+        "descricao_en": "The traditional clash detection cycle is one-directional: Navisworks detects, but doesn't resolve or report status back, and management happens separately in Excel, with no real-time visibility for whoever manages the project. The platform closes that loop using BCF (BIM Collaboration Format, an open protocol native to Revit) as the link between tools. It reads clash reports exported from Navisworks, keeps a per-project history over time, shows a discipline-crossing matrix, and allows managing each clash individually (status, owner, priority, comments), including bulk assignment. The core features are already operational; next steps are PDF export and finer editing of project data."
+      },
+      {
+        "id": "planilhas-gestao-jfa",
+        "titulo_pt": "Planilhas de gestão JFA",
+        "titulo_en": "JFA management spreadsheets",
+        "estado_pt": "Placeholder content, to be replaced",
+        "estado_en": "Placeholder content, to be replaced",
+        "ano": "",
+        "tecnologias": "",
+        "link": "",
+        "descricao_pt": "Placeholder content, to be replaced.",
+        "descricao_en": "Placeholder content, to be replaced."
+      },
+      {
+        "id": "tpbimtools",
+        "titulo_pt": "TPBimTools (plugin próprio)",
+        "titulo_en": "TPBimTools (own plugin)",
+        "estado_pt": "Em desenvolvimento",
+        "estado_en": "In development",
+        "ano": "2026",
+        "tecnologias": "C#, API Revit, .NET",
+        "link": "",
+        "descricao_pt": "Plugin standalone para Revit, pensado para modeladores e coordenadores MEP dentro do próprio Revit. Nasceu para fechar um problema concreto: depois de um relatório de clashes ser gerado, alguém tem de navegar até cada elemento, perceber o contexto e marcar o que já foi resolvido, tarefa hoje feita à mão dentro do Revit sem apoio de ferramenta nenhuma. O plugin importa relatórios BCF (do Navisworks ou da plataforma web de clashes), navega diretamente até aos elementos por identificador, isola-os em vistas dedicadas e exporta de volta o estado com comentários. O desenvolvimento segue um backlog priorizado: navegador de clashes primeiro, depois gestão de vistas e folhas em lote, nomenclatura em massa e exportação NWC/IFC configurada.",
+        "descricao_en": "Standalone plugin for Revit, built for MEP modelers and coordinators working inside Revit itself. It was born to close a concrete gap: once a clash report is generated, someone has to navigate to each element, understand the context, and mark what's already resolved, a task currently done entirely by hand inside Revit with no tool support. The plugin imports BCF reports (from Navisworks or the clash management web platform), navigates directly to elements by identifier, isolates them in dedicated views, and exports the status back with comments. Development follows a prioritized backlog: clash navigator first, then batch view and sheet management, bulk naming, and configured NWC/IFC export."
+      },
+      {
+        "id": "plugin-jfa",
+        "titulo_pt": "Plugin JFA",
+        "titulo_en": "JFA plugin",
+        "estado_pt": "Placeholder content, to be replaced",
+        "estado_en": "Placeholder content, to be replaced",
+        "ano": "",
+        "tecnologias": "",
+        "link": "",
+        "descricao_pt": "Placeholder content, to be replaced.",
+        "descricao_en": "Placeholder content, to be replaced."
+      },
+      {
+        "id": "rotinas",
+        "titulo_pt": "Rotinas de automação",
+        "titulo_en": "Automation routines",
+        "estado_pt": "Testado e em uso (Worksets Manager); limitação de API documentada (Link Manager)",
+        "estado_en": "Tested and in use (Worksets Manager); documented API limitation (Link Manager)",
+        "ano": "2026",
+        "tecnologias": "C#, API Revit, Excel (ClosedXML)",
+        "link": "",
+        "descricao_pt": "Add-in para Revit que aplica em massa, a partir de uma matriz em Excel, configurações que de outra forma seriam feitas manualmente template a template: criação de worksets em falta e a sua visibilidade em cada View Template, e a associação de links de outras disciplinas a cada template com o estado correto (visível, oculto ou meio-tom). O motor lê a matriz, mostra um resumo do que vai mudar e só altera o modelo depois de confirmação. Durante o desenvolvimento surgiu uma limitação real da API do Revit: não é possível controlar a visibilidade ou o meio-tom de um link dentro de um View Template, só em vistas concretas. A ferramenta contorna isto aplicando o estado diretamente nas vistas que usam cada template, uma solução funcional mas com uma consequência a saber: vistas novas criadas depois têm de correr a ferramenta outra vez, porque não herdam do template. O motor não depende de nenhuma empresa específica, todos os valores vêm do Excel.",
+        "descricao_en": "Revit add-in that applies, from an Excel matrix, configuration that would otherwise be done by hand template by template: creating missing worksets and setting their visibility per View Template, and linking other disciplines' links to each template with the correct state (visible, hidden, or halftone). The engine reads the matrix, shows a summary of what will change, and only touches the model after confirmation. During development a real Revit API limitation surfaced: it's not possible to control a link's visibility or halftone state inside a View Template, only in actual views. The tool works around this by applying the state directly to the views that use each template, a working solution with one consequence worth knowing: new views created afterwards need the tool run again, since they don't inherit from the template. The engine has no company-specific logic built in; every value comes from the Excel file."
+      }
+    ]
+  }
+}
