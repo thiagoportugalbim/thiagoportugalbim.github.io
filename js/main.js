@@ -40,4 +40,57 @@ document.querySelectorAll("[data-lang-btn]").forEach((botao) => {
 const idiomaGuardado = localStorage.getItem(CHAVE_IDIOMA) || "pt";
 aplicarIdioma(idiomaGuardado);
 
-console.log("Portfolio Web: JS carregado. Navegacao e seletor de idioma P1-C.");
+/* ============================================================
+   RENDERIZADOR DE PROJETOS | P2-B
+   Carrega dados/projetos.json e renderiza na grade.
+   ============================================================ */
+
+async function carregarEExibirProjetos() {
+  try {
+    const resposta = await fetch("dados/projetos.json");
+    const dados = await resposta.json();
+
+    const gradeElement = document.getElementById("grade-projetos");
+    if (!gradeElement) return;
+
+    const idiomaAtual = localStorage.getItem(CHAVE_IDIOMA) || "pt";
+
+    dados.projetos.forEach((projeto) => {
+      const card = document.createElement("div");
+      card.className = "projeto-card";
+
+      const isDisciplinasArray = Array.isArray(projeto.disciplinas_pt);
+      const disciplinasTexto = isDisciplinasArray
+        ? (idiomaAtual === "pt"
+          ? projeto.disciplinas_pt.join(", ")
+          : projeto.disciplinas_en.join(", "))
+        : (idiomaAtual === "pt" ? projeto.disciplinas_pt : projeto.disciplinas_en);
+
+      const areaTexto = projeto.area_m2 ? `${projeto.area_m2.toLocaleString("pt-PT")} m²` : "—";
+
+      card.innerHTML = `
+        <h3 data-pt="${projeto.nome_pt}" data-en="${projeto.nome_en}">${projeto.nome_pt}</h3>
+        <div class="projeto-meta">
+          <p><strong data-pt="Localização:" data-en="Location:">Localização:</strong> ${projeto.localizacao}</p>
+          <p><strong data-pt="Tipologia:" data-en="Typology:">Tipologia:</strong> <span data-pt="${projeto.tipologia_pt}" data-en="${projeto.tipologia_en}">${projeto.tipologia_pt}</span></p>
+          <p><strong data-pt="Disciplinas:" data-en="Disciplines:">Disciplinas:</strong> ${disciplinasTexto}</p>
+          ${projeto.area_m2 ? `<p><strong data-pt="Área:" data-en="Area:">Área:</strong> ${areaTexto}</p>` : ""}
+        </div>
+        <p class="projeto-descricao" data-pt="${projeto.descricao_pt}" data-en="${projeto.descricao_en}">${projeto.descricao_pt}</p>
+      `;
+
+      gradeElement.appendChild(card);
+    });
+
+    // Reaplicar idioma para os elementos recém-renderizados
+    aplicarIdioma(idiomaAtual);
+
+  } catch (erro) {
+    console.error("Erro ao carregar projetos:", erro);
+  }
+}
+
+// Ao carregar a pagina, renderizar projetos
+document.addEventListener("DOMContentLoaded", carregarEExibirProjetos);
+
+console.log("Portfolio Web: JS carregado. Navegacao, seletor de idioma P1-C e renderizador de projetos P2-B.");

@@ -134,3 +134,39 @@ body {
   color: #666666;
   font-size: 0.875rem;
 }
+
+/* Grade de projetos | P2-B
+   Minima: layout responsivo sem estetica. */
+.grade-projetos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.projeto-card {
+  border: 1px solid #e5e5e5;
+  padding: 1.25rem;
+  border-radius: 0.25rem;
+}
+
+.projeto-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.projeto-meta {
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  color: #666666;
+}
+
+.projeto-meta p {
+  margin-bottom: 0.5rem;
+}
+
+.projeto-descricao {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
