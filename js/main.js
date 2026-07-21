@@ -122,7 +122,7 @@ async function carregarEExibirCoordenados() {
           <div class="projeto-meta">
             ${projeto.localizacao ? `<p><strong data-pt="Localização:" data-en="Location:">Localização:</strong> ${projeto.localizacao}</p>` : ""}
             <p><strong data-pt="Tipologia:" data-en="Typology:">Tipologia:</strong> <span data-pt="${projeto.tipologia_pt}" data-en="${projeto.tipologia_en}">${projeto.tipologia_pt}</span></p>
-            ${projeto.capacidade ? `<p><strong data-pt="Capacidade:" data-en="Scale:">Capacidade:</strong> <span data-pt="${projeto.capacidade}" data-en="${projeto.capacidade_en}">${projeto.capacidade}</span></p>` : ""}
+            ${projeto.capacidade_pt ? `<p><strong data-pt="Capacidade:" data-en="Scale:">Capacidade:</strong> <span data-pt="${projeto.capacidade_pt}" data-en="${projeto.capacidade_en}">${projeto.capacidade_pt}</span></p>` : ""}
             <p><strong data-pt="Papel:" data-en="Role:">Papel:</strong> <span data-pt="${projeto.papel_pt}" data-en="${projeto.papel_en}">${projeto.papel_pt}</span></p>
             <p><strong data-pt="Disciplinas:" data-en="Disciplines:">Disciplinas:</strong> <span data-pt="${disciplinasPt}" data-en="${disciplinasEn}">${disciplinasPt}</span></p>
           </div>

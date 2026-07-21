@@ -7,7 +7,7 @@
       "localizacao": "Portimão, Portugal",
       "tipologia_pt": "Hotelaria de Luxo",
       "tipologia_en": "Luxury Hospitality",
-      "capacidade_pt": "",
+      "capacidade_pt": "~275 quartos + 150 apartamentos de marca",
       "capacidade_en": "~275 rooms + 150 branded apartments",
       "papel_pt": "Coordenação BIM MEP",
       "papel_en": "BIM MEP Coordination",
@@ -23,7 +23,7 @@
         "HVAC",
         "Fire Protection"
       ],
-      "descricao_pt": "TESTE TESTE TESTE Coordenação multidisciplinar MEP num empreendimento hoteleiro de grande escala, com gestão de interferências entre disciplinas e acompanhamento do modelo até à fase executiva.",
+      "descricao_pt": "Coordenação multidisciplinar MEP num empreendimento hoteleiro de grande escala, com gestão de interferências entre disciplinas e acompanhamento do modelo até à fase executiva.",
       "descricao_en": "Multidisciplinary MEP coordination on a large-scale hospitality development, managing clashes across disciplines and tracking the model through to the executive phase.",
       "imagem": ""
     },
@@ -34,7 +34,7 @@
       "localizacao": "Santarém, Portugal",
       "tipologia_pt": "Parque Temático",
       "tipologia_en": "Theme Park",
-      "capacidade": "~800.000 m², investimento de 450M€",
+      "capacidade_pt": "~800.000 m², investimento de 450M€",
       "capacidade_en": "~800,000 m², €450M investment",
       "papel_pt": "Coordenação BIM de larga escala",
       "papel_en": "Large-Scale BIM Coordination",
@@ -58,7 +58,7 @@
       "localizacao": "Cascais, Portugal",
       "tipologia_pt": "Saúde",
       "tipologia_en": "Healthcare",
-      "capacidade": "~13.500 m², 7 pisos",
+      "capacidade_pt": "~13.500 m², 7 pisos",
       "capacidade_en": "~13,500 m², 7 floors",
       "papel_pt": "Coordenação MEP",
       "papel_en": "MEP Coordination",
@@ -82,7 +82,7 @@
       "localizacao": "",
       "tipologia_pt": "Data Center",
       "tipologia_en": "Data Center",
-      "capacidade": "",
+      "capacidade_pt": "",
       "capacidade_en": "",
       "papel_pt": "Modelação e coordenação elétrica",
       "papel_en": "Electrical Modeling and Coordination",
@@ -102,7 +102,7 @@
       "localizacao": "São Francisco, EUA",
       "tipologia_pt": "Infraestrutura de Tratamento de Água",
       "tipologia_en": "Water Treatment Infrastructure",
-      "capacidade": "",
+      "capacidade_pt": "",
       "capacidade_en": "",
       "papel_pt": "Modelação a partir de nuvem de pontos",
       "papel_en": "Point Cloud Modeling",
@@ -154,37 +154,5 @@
         "rotulo_en": "MCMV housing units"
       }
     ]
-  },
-  "__estatisticas_virtual__": [
-    {
-      "valor": "2021",
-      "rotulo_pt": "Ano de fundação",
-      "rotulo_en": "Founded"
-    },
-    {
-      "valor": "14",
-      "rotulo_pt": "Clientes",
-      "rotulo_en": "Clients"
-    },
-    {
-      "valor": "107",
-      "rotulo_pt": "Projetos completos",
-      "rotulo_en": "Completed projects"
-    },
-    {
-      "valor": "71",
-      "rotulo_pt": "Executados em 6 estados",
-      "rotulo_en": "Executed across 6 states"
-    },
-    {
-      "valor": "242.408 m²",
-      "rotulo_pt": "Área projetada",
-      "rotulo_en": "Designed area"
-    },
-    {
-      "valor": "4.680",
-      "rotulo_pt": "Unidades MCMV",
-      "rotulo_en": "MCMV housing units"
-    }
-  ]
+  }
 }
