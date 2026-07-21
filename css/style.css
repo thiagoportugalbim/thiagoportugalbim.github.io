@@ -170,3 +170,37 @@ body {
   font-size: 0.9rem;
   line-height: 1.5;
 }
+
+/* Bloco de estatisticas da Futuro Engenharia | P2-C
+   Minima: layout responsivo sem estetica. */
+.subtitulo-seccao {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.lista-estatisticas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.estatistica-item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e5e5e5;
+  border-radius: 0.25rem;
+  padding: 0.75rem;
+}
+
+.estatistica-valor {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.estatistica-rotulo {
+  font-size: 0.8rem;
+  color: #666666;
+}
