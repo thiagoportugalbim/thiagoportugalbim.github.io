@@ -68,12 +68,15 @@ async function carregarEExibirProjetos() {
 
       const areaTexto = projeto.area_m2 ? `${projeto.area_m2.toLocaleString("pt-PT")} m²` : "—";
 
+      const disciplinasPt = Array.isArray(projeto.disciplinas_pt) ? projeto.disciplinas_pt.join(", ") : projeto.disciplinas_pt;
+      const disciplinasEn = Array.isArray(projeto.disciplinas_en) ? projeto.disciplinas_en.join(", ") : projeto.disciplinas_en;
+
       card.innerHTML = `
         <h3 data-pt="${projeto.nome_pt}" data-en="${projeto.nome_en}">${projeto.nome_pt}</h3>
         <div class="projeto-meta">
           <p><strong data-pt="Localização:" data-en="Location:">Localização:</strong> ${projeto.localizacao}</p>
           <p><strong data-pt="Tipologia:" data-en="Typology:">Tipologia:</strong> <span data-pt="${projeto.tipologia_pt}" data-en="${projeto.tipologia_en}">${projeto.tipologia_pt}</span></p>
-          <p><strong data-pt="Disciplinas:" data-en="Disciplines:">Disciplinas:</strong> ${disciplinasTexto}</p>
+          <p><strong data-pt="Disciplinas:" data-en="Disciplines:">Disciplinas:</strong> <span data-pt="${disciplinasPt}" data-en="${disciplinasEn}">${disciplinasPt}</span></p>
           ${projeto.area_m2 ? `<p><strong data-pt="Área:" data-en="Area:">Área:</strong> ${areaTexto}</p>` : ""}
         </div>
         <p class="projeto-descricao" data-pt="${projeto.descricao_pt}" data-en="${projeto.descricao_en}">${projeto.descricao_pt}</p>
