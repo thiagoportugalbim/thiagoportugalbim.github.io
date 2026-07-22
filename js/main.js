@@ -321,6 +321,74 @@ async function carregarEExibirConstruidoComCodigo() {
   }
 }
 
+/* ============================================================
+   RENDERIZADOR DE PALESTRAS E EVENTOS | P2-H
+   Bloco unico "geral" (mesmo padrao de coisas-construidas.json),
+   com campos extra (data, local) alem de titulo/descricao. Funcao
+   propria, nao reaproveita renderizarBlocoCoordenacaoBim pela
+   mesma razao da P2-G: o cartao precisa de mais campos.
+   ============================================================ */
+
+async function carregarEExibirPalestrasEventos() {
+  try {
+    const resposta = await fetch("dados/palestras-eventos.json");
+    const dados = await resposta.json();
+    const bloco = dados.geral;
+    const idiomaAtual = localStorage.getItem(CHAVE_IDIOMA) || "pt";
+
+    const introElement = document.getElementById("palestras-intro");
+    if (introElement) {
+      introElement.dataset.pt = bloco.intro_pt;
+      introElement.dataset.en = bloco.intro_en;
+      introElement.textContent = bloco.intro_pt;
+    }
+
+    const gradeElement = document.getElementById("grade-palestras");
+    if (gradeElement) {
+      bloco.itens.forEach((item) => {
+        const card = document.createElement("div");
+        card.className = "item-bim-card item-construido-card";
+
+        card.innerHTML = `
+          <h4 data-pt="${item.titulo_pt}" data-en="${item.titulo_en}">${item.titulo_pt}</h4>
+          <div class="item-construido-meta">
+            ${item.data ? `<span class="item-construido-ano">${item.data}</span>` : ""}
+            ${item.local_pt ? `<span class="badge-estado" data-pt="${item.local_pt}" data-en="${item.local_en}">${item.local_pt}</span>` : ""}
+          </div>
+          <p data-pt="${item.descricao_pt}" data-en="${item.descricao_en}">${item.descricao_pt}</p>
+        `;
+
+        gradeElement.appendChild(card);
+      });
+    }
+
+    aplicarIdioma(idiomaAtual);
+
+  } catch (erro) {
+    console.error("Erro ao carregar palestras e eventos:", erro);
+  }
+}
+
+/* ============================================================
+   RENDERIZADOR DE FORMACAO E CERTIFICACOES | P2-H
+   Mesmo padrao "composta" de coordenacao-bim.json (varios blocos,
+   cada um com titulo, intro e itens de titulo+descricao). Reaproveita
+   renderizarBlocoCoordenacaoBim sem alteracoes.
+   ============================================================ */
+
+async function carregarEExibirFormacaoCertificacoes() {
+  try {
+    const resposta = await fetch("dados/formacao-certificacoes.json");
+    const dados = await resposta.json();
+
+    renderizarBlocoCoordenacaoBim(dados.formacao_academica, "formacao-academica");
+    renderizarBlocoCoordenacaoBim(dados.certificacoes, "certificacoes");
+
+  } catch (erro) {
+    console.error("Erro ao carregar formacao e certificacoes:", erro);
+  }
+}
+
 // Ao carregar a pagina, renderizar projetos
 document.addEventListener("DOMContentLoaded", carregarEExibirProjetos);
 document.addEventListener("DOMContentLoaded", carregarEExibirCoordenados);
@@ -329,5 +397,7 @@ document.addEventListener("DOMContentLoaded", carregarEExibirSoftware);
 document.addEventListener("DOMContentLoaded", carregarEExibirPadroesNormas);
 document.addEventListener("DOMContentLoaded", carregarEExibirProgramacaoAutomacao);
 document.addEventListener("DOMContentLoaded", carregarEExibirConstruidoComCodigo);
+document.addEventListener("DOMContentLoaded", carregarEExibirPalestrasEventos);
+document.addEventListener("DOMContentLoaded", carregarEExibirFormacaoCertificacoes);
 
-console.log("Portfolio Web: JS carregado. Navegacao, seletor de idioma P1-C, renderizador de projetos P2-B, projetos coordenados P2-C, coordenacao BIM P2-D, software/padroes-normas P2-E e coisas construidas com codigo P2-G.");
+console.log("Portfolio Web: JS carregado. Navegacao, seletor de idioma P1-C, renderizador de projetos P2-B, projetos coordenados P2-C, coordenacao BIM P2-D, software/padroes-normas P2-E, coisas construidas com codigo P2-G e palestras/formacao P2-H.");

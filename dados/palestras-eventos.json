@@ -1,0 +1,40 @@
+{
+  "geral": {
+    "titulo_pt": "Palestras e Reconhecimentos",
+    "titulo_en": "Talks and Recognition",
+    "intro_pt": "Participações em eventos, palestras convidadas e reconhecimentos ao longo do percurso.",
+    "intro_en": "Event participation, invited talks and recognition throughout the journey.",
+    "itens": [
+      {
+        "id": "pitch-day-inova-mrvco",
+        "titulo_pt": "Pitch Day INOVA MRV&CO",
+        "titulo_en": "MRV&CO INOVA Pitch Day",
+        "data": "2021-2022",
+        "local_pt": "Sede da MRV&CO, Belo Horizonte",
+        "local_en": "MRV&CO headquarters, Belo Horizonte",
+        "descricao_pt": "Representação da equipa na final do desafio interno de eficiência operacional da MRV&CO, entre mais de 1000 ideias inscritas. A proposta ficou entre as 30 finalistas (Top 30), apresentada na sede da empresa em Belo Horizonte.",
+        "descricao_en": "Represented the team in the final of MRV&CO's internal operational efficiency challenge, among more than 1,000 submitted ideas. The proposal placed among the top 30 finalists, presented at the company's headquarters in Belo Horizonte."
+      },
+      {
+        "id": "palestra-bim-ugb",
+        "titulo_pt": "Palestra: Aplicação do BIM na Engenharia Civil",
+        "titulo_en": "Talk: Applying BIM in Civil Engineering",
+        "data": "Julho de 2025",
+        "local_pt": "Universidade Geraldo Di Biase (UGB)",
+        "local_en": "Universidade Geraldo Di Biase (UGB)",
+        "descricao_pt": "Palestra convidada sobre a aplicação do BIM na Engenharia Civil, dirigida a alunos da Universidade Geraldo Di Biase (UGB).",
+        "descricao_en": "Invited talk on applying BIM in Civil Engineering, delivered to Universidade Geraldo Di Biase (UGB) students."
+      },
+      {
+        "id": "live-julia-cadore",
+        "titulo_pt": "Participação na live de Julia Cadore sobre modelação de hidráulica em Revit",
+        "titulo_en": "Guest appearance on Julia Cadore's live session on Revit plumbing modeling",
+        "data": "",
+        "local_pt": "Live online, para alunos de curso",
+        "local_en": "Online live session, for course students",
+        "descricao_pt": "Participação convidada numa live sobre a evolução da modelação de hidráulica no Revit, dirigida a alunos de um curso.",
+        "descricao_en": "Guest participation in a live session on the evolution of plumbing modeling in Revit, aimed at course students."
+      }
+    ]
+  }
+}

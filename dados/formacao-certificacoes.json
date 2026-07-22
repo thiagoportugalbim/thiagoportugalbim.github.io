@@ -1,0 +1,38 @@
+{
+  "formacao_academica": {
+    "titulo_pt": "Formação Académica",
+    "titulo_en": "Academic Education",
+    "intro_pt": "Percurso académico, da formação técnica de base à especialização em BIM.",
+    "intro_en": "Academic path, from base technical education to BIM specialization.",
+    "itens": [
+      {
+        "id": "pos-graduacao-bim",
+        "titulo_pt": "Pós-graduação em BIM",
+        "titulo_en": "Postgraduate Degree in BIM",
+        "descricao_pt": "EBPós, julho de 2022 a julho de 2023. Especialização em metodologia BIM aplicada à coordenação e gestão de projetos multidisciplinares.",
+        "descricao_en": "EBPós, July 2022 to July 2023. Specialization in BIM methodology applied to multidisciplinary project coordination and management."
+      },
+      {
+        "id": "engenharia-civil",
+        "titulo_pt": "Engenharia Civil",
+        "titulo_en": "Civil Engineering",
+        "descricao_pt": "Universidade Geraldo Di Biase (UGB), concluída em 2022.",
+        "descricao_en": "Universidade Geraldo Di Biase (UGB), completed in 2022."
+      },
+      {
+        "id": "tecnico-etpc",
+        "titulo_pt": "Técnico",
+        "titulo_en": "Technical Degree",
+        "descricao_pt": "ETPC, formação técnica de base, anterior à graduação em Engenharia Civil.",
+        "descricao_en": "ETPC, base technical education prior to the Civil Engineering degree."
+      }
+    ]
+  },
+  "certificacoes": {
+    "titulo_pt": "Certificações",
+    "titulo_en": "Certifications",
+    "intro_pt": "Conteúdo de exemplo (placeholder), a substituir por uma lista de certificações agrupadas por tema.",
+    "intro_en": "Placeholder content, to be replaced with a list of certifications grouped by theme.",
+    "itens": []
+  }
+}
